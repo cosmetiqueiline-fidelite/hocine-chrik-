@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F2503F">
+<title>بطاقة ولاء كوسمتيك حسين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+:root {
+  --bg: #FFF6F0;
+  --surface: #FFFFFF;
+  --fg: #2B2230;
+  --muted: #6F6068;
+  --line: #EFD6C8;
+  --coral: #F2503F;
+  --coral-ink: #FFFFFF;
+  --teal: #0C8F85;
+  --teal-ink: #FFFFFF;
+  --peach: #FFD3B8;
+  --focus: #0C8F85;
+  --font-display: "Reem Kufi", "Tajawal", system-ui, sans-serif;
+  --font-body: "Tajawal", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1D1621;
+    --surface: #2A2030;
+    --fg: #FBEFE8;
+    --muted: #BDAAB4;
+    --line: #473A4C;
+    --coral: #FF7B6B;
+    --coral-ink: #2B1216;
+    --teal: #3FCBBE;
+    --teal-ink: #072320;
+    --peach: #5A3C3A;
+    --focus: #3FCBBE;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1D1621;
+  --surface: #2A2030;
+  --fg: #FBEFE8;
+  --muted: #BDAAB4;
+  --line: #473A4C;
+  --coral: #FF7B6B;
+  --coral-ink: #2B1216;
+  --teal: #3FCBBE;
+  --teal-ink: #072320;
+  --peach: #5A3C3A;
+  --focus: #3FCBBE;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-inline: 16px;
+  padding-block: 20px 32px;
+}
+.wrap { max-width: 440px; margin-inline: auto; display: flex; flex-direction: column; gap: 20px; }
+header { display: flex; flex-direction: column; gap: 2px; padding-top: 8px; }
+.eyebrow { font-size: 14px; letter-spacing: 0.04em; color: var(--coral); font-weight: 700; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: 38px; line-height: 1.2; margin: 0; text-wrap: balance; }
+.tag { margin: 0; color: var(--muted); font-size: 17px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 20px 18px 18px;
+  display: flex; flex-direction: column; gap: 16px;
+  box-shadow: 0 10px 30px -18px rgba(242, 80, 63, 0.45);
+}
+.offer { margin: 0; font-weight: 700; font-size: 18px; text-wrap: balance; }
+.offer b { color: var(--teal); }
+.stamps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.stamp {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px dashed var(--line);
+  display: grid; place-items: center;
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--muted);
+  background: transparent;
+  position: relative;
+  min-width: 0;
+}
+.stamp svg { width: 46%; height: 46%; }
+.stamp.on {
+  border: 2px solid var(--coral);
+  background: var(--coral);
+  color: var(--coral-ink);
+}
+.stamp.on.pop { animation: pop 380ms ease-out; }
+.stamp.gift {
+  border: 2px solid var(--teal);
+  color: var(--teal);
+  font-size: 18px;
+  flex-direction: column;
+}
+.stamp.gift.ready { background: var(--teal); color: var(--teal-ink); }
+.stamp.gift small { display: block; font-family: var(--font-body); font-size: 12px; font-weight: 700; line-height: 1; margin-top: 2px; }
+.stamp.gift .inner { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+@keyframes pop { 0% { transform: scale(0.7); } 60% { transform: scale(1.08); } 100% { transform: scale(1); } }
+.status { margin: 0; font-size: 16px; color: var(--muted); }
+.status strong { color: var(--fg); font-variant-numeric: tabular-nums; }
+.status.win { color: var(--teal); font-weight: 700; }
+
+label { display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+input[type="text"], input[type="password"] {
+  width: 100%;
+  font: inherit;
+  color: var(--fg);
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+input::placeholder { color: var(--muted); opacity: 0.8; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+.staff { border-top: 1px dashed var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 12px; }
+.link-btn {
+  align-self: flex-start;
+  background: none; border: none; padding: 6px 0;
+  font: inherit; font-size: 14px; color: var(--muted);
+  text-decoration: underline; text-underline-offset: 4px;
+  cursor: pointer;
+}
+.panel { display: flex; flex-direction: column; gap: 12px; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn {
+  flex: 1 1 140px; min-width: 0;
+  font: inherit; font-weight: 700;
+  border-radius: 14px; padding: 12px 14px;
+  border: 2px solid var(--coral);
+  background: var(--coral); color: var(--coral-ink);
+  cursor: pointer;
+}
+.btn.alt { background: transparent; color: var(--teal); border-color: var(--teal); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+footer { color: var(--muted); font-size: 14px; display: flex; flex-direction: column; gap: 2px; }
+.phone { direction: ltr; unicode-bidi: isolate; display: inline-block; font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 700; user-select: all; }
+
+.toast {
+  position: fixed; inset-inline: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  max-width: 408px; margin-inline: auto;
+  background: var(--fg); color: var(--bg);
+  border-radius: 14px; padding: 12px 16px; font-weight: 700; text-align: center;
+}
+@media (prefers-reduced-motion: reduce) { .stamp.on.pop { animation: none; } }
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<main class="wrap" dir="rtl" lang="ar">
+  <header>
+    <span class="eyebrow">بطاقة الولاء</span>
+    <h1>كوسمتيك حسين</h1>
+    <p class="tag">عطور مركزة</p>
+  </header>
+
+  <section class="card" aria-label="بطاقة الولاء">
+    <p class="offer">اشتري <b>5 قارورات</b> والسادسة مجانا</p>
+    <div class="stamps" id="stamps"></div>
+    <p class="status" id="status"></p>
+    <div>
+      <label for="name">اسم الزبون</label>
+      <input type="text" id="name" placeholder="اكتب اسمك" autocomplete="name" maxlength="40">
+    </div>
+  </section>
+
+  <section class="staff" aria-label="خاص بالمحل">
+    <button class="link-btn" id="staffToggle" type="button" aria-expanded="false" aria-controls="panel">خاص بالمحل</button>
+    <div class="panel" id="panel" hidden>
+      <div>
+        <label for="pin">الرمز السري للمحل</label>
+        <input type="password" id="pin" inputmode="numeric" autocomplete="off" placeholder="••••">
+      </div>
+      <div class="row">
+        <button class="btn" id="addStamp" type="button">أضف طابعا</button>
+        <button class="btn alt" id="redeem" type="button">تسليم القارورة المجانية</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>كوسمتيك حسين، عطور مركزة</span>
+    <span>للاستفسار: <span class="phone">0661719676</span></span>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bottle" viewBox="0 0 24 24">
+    <path d="M9 2h6v3h-1v2.2c2.3.8 4 3 4 5.6V20a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7.2c0-2.6 1.7-4.8 4-5.6V5H9V2z" fill="currentColor"/>
+    <path d="M9 14.5c1.6-1.2 4.4 1.2 6 0" stroke="var(--surface)" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".55"/>
+  </symbol>
+  <symbol id="gift" viewBox="0 0 24 24">
+    <path d="M3 9h18v4H3zM4 13h16v8H4zM12 9v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M12 9c-1-3-5-4-5-1.5C7 9 9 9 12 9zm0 0c1-3 5-4 5-1.5C17 9 15 9 12 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<script>
+(function () {
+  var CONFIG = { pin: "1234", goal: 5 };
+  var KEY = "hocine-loyalty-v1";
+  var mem = null;
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (raw) { var s = JSON.parse(raw); if (s && typeof s.stamps === "number") return s; }
+    } catch (e) {}
+    return mem || { name: "", stamps: 0, redeemed: 0 };
+  }
+  function save(s) {
+    mem = s;
+    try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) {}
+  }
+
+  var state = load();
+  var el = {
+    stamps: document.getElementById("stamps"),
+    status: document.getElementById("status"),
+    name: document.getElementById("name"),
+    toggle: document.getElementById("staffToggle"),
+    panel: document.getElementById("panel"),
+    pin: document.getElementById("pin"),
+    add: document.getElementById("addStamp"),
+    redeem: document.getElementById("redeem"),
+    toast: document.getElementById("toast")
+  };
+  var toastTimer = null;
+
+  function toast(msg) {
+    el.toast.textContent = msg;
+    el.toast.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.toast.hidden = true; }, 2600);
+  }
+
+  function render(popIndex) {
+    var html = "";
+    for (var i = 0; i < CONFIG.goal; i++) {
+      var on = i < state.stamps;
+      var cls = "stamp" + (on ? " on" : "") + (on && i === popIndex ? " pop" : "");
+      html += '<div class="' + cls + '" aria-label="' + (on ? "طابع " : "فارغ ") + (i + 1) + '">' +
+        (on ? '<svg aria-hidden="true"><use href="#bottle"/></svg>' : (i + 1)) + "</div>";
+    }
+    var ready = state.stamps >= CONFIG.goal;
+    html += '<div class="stamp gift' + (ready ? " ready" : "") + '" aria-label="القارورة المجانية">' +
+      '<span class="inner"><svg aria-hidden="true" style="width:30px;height:30px"><use href="#gift"/></svg><small>مجانا</small></span></div>';
+    el.stamps.innerHTML = html;
+
+    if (ready) {
+      el.status.className = "status win";
+      el.status.textContent = "مبروك، قارورتك المجانية جاهزة. أظهر البطاقة في المحل.";
+    } else {
+      el.status.className = "status";
+      el.status.innerHTML = "اشتريت <strong>" + state.stamps + "</strong> من " + CONFIG.goal +
+        " قارورات. باقي <strong>" + (CONFIG.goal - state.stamps) + "</strong> للقارورة المجانية.";
+    }
+    if (state.redeemed > 0 && !ready) {
+      el.status.innerHTML += " استلمت " + state.redeemed + " مجانا من قبل.";
+    }
+    el.add.disabled = ready;
+    el.redeem.disabled = !ready;
+    if (document.activeElement !== el.name) el.name.value = state.name || "";
+  }
+
+  function pinOk() {
+    if (el.pin.value === CONFIG.pin) return true;
+    toast("الرمز السري غير صحيح");
+    el.pin.focus();
+    return false;
+  }
+
+  el.name.addEventListener("input", function () {
+    state.name = el.name.value.slice(0, 40);
+    save(state);
+  });
+
+  el.toggle.addEventListener("click", function () {
+    var open = el.panel.hidden;
+    el.panel.hidden = !open;
+    el.toggle.setAttribute("aria-expanded", String(open));
+    if (open) el.pin.focus();
+  });
+
+  el.add.addEventListener("click", function () {
+    if (!pinOk()) return;
+    if (state.stamps >= CONFIG.goal) return;
+    state.stamps += 1;
+    save(state);
+    render(state.stamps - 1);
+    el.pin.value = "";
+    toast(state.stamps >= CONFIG.goal ? "الطابع الخامس، القارورة المجانية جاهزة" : "تمت إضافة الطابع");
+  });
+
+  el.redeem.addEventListener("click", function () {
+    if (!pinOk()) return;
+    if (state.stamps < CONFIG.goal) return;
+    state.stamps = 0;
+    state.redeemed += 1;
+    save(state);
+    render();
+    el.pin.value = "";
+    toast("تم تسليم القارورة المجانية، بطاقة جديدة");
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>
